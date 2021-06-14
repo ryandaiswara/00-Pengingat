@@ -60,8 +60,9 @@
 
     NOTE : Setelah menyelesaikan codignan dari branch cabang, lakukan add dan commit.
 
-    Delete branch / kembali ke brach master dahulu
-    * git branch -d namaBranch
+    Delete branch. NOTE: kembali ke branch master dulu
+    * git branch -d namaBranch (untuk branch yang sudah di merge)
+    * git branch -D namaBranch (untuk branch yang belum di merge)
     
     Cek file yang di merge
     * git branch --merged
@@ -70,9 +71,9 @@
     NOTE : Sebelum melakukan merge, Kembali dulu ke master branch -> git checkout master
     * git merge namaBranch
 
-12. Conflict = conflict terjadi ketika master branch mengalami perubahan sementara file yang ada di branch tidak mengetahui hal tersebut ketika melakukan merge. solusinya adalah:
-    * menghapus penanda conflict
-    * jika sudah cocok dengan semuanya maka lakukan commit. tapi kali ini tidak ada message-nya -> git commit
+12. Merge Conflict = Terjadi perbedaan antara source code master dan branch ketika di merge
+    * Pilih code mana yang mau ditambahkan/dihilangkan
+    * git add . -> git commit -m "pesan commit"
 
 13. Github
     Ada dua cara untuk membuat directory Github:
