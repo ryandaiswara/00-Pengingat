@@ -87,3 +87,9 @@
     Cek remote yang terhubung
     * git remote
     * git remote -v / cek secara spesifik (menampilkan link cloud repo)
+
+14. Conflict push
+    Terjadi karena ada perubahan di cloud repo sementara di repo lokal masih memakai source code yang lama
+    * git fetch = Untuk cek perubahan yang ada di cloud repo
+    * git pull  = Untuk mengambil perubahan yang ada di cloud repo
+    Setelah itu dipilih yang mau ditambahkan/dihilangkan dan lakukan commit lagi dan push lagi
