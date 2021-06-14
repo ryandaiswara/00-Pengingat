@@ -1,0 +1,76 @@
+1.  Membuat user.name
+    * git config --global user.name "namauser"
+
+2.  Membuat email
+    * git config --global email "email@mail.com"
+
+3.  Init repositery
+    * git Init
+
+4.  Add file/repo ke stagging area
+    * git add namafile
+
+    Add semua file/repo ke stagging area
+    * git add .
+
+5.  Cek status
+    * git status
+
+6.  Unstage / mengembalikan file ke modification area
+    * git rm --cached namafile
+
+7.  Commit
+    * git commit -m "message"
+
+8.  Cek log/history
+    * git log
+
+    Menjadikan 1 baris agar mudah dibaca
+    * git log --oneline
+
+9.  Checkout / melihat kembal perubahan dari commit tertentu
+    * git checkout unique_id
+
+    Kembali ke checkout master branch
+    * git checkout master
+
+    Revert / Mengembalikan semua perubahan yang terjadi pada baris kode menjadi commit terakhir
+    * git revert unique_id
+
+    Reset / Delete semua perubahan pada baris kode ke id tertentu tetapi tidak pada codingannya
+    * git reset unique_id
+
+    Reset / Delete semua perubahan pada baris kode ke id tertentu dan menghapus semua codingannya sesua unique_id
+    * git reset unique_id --hard
+
+10. Branch = Membuat branch / percabangan dari master branch
+    * git branch namaBranch
+    * contoh = git branch feature-1
+
+    Melihat semua branch yang ada didalam repo
+    * git branch -a
+
+    Cara lain membuat brach dan langsung melihatnya
+    * git checkout -b namaBranch
+
+    Pindah ke antar branch
+    * git checkout namaBranch
+
+    NOTE : Setelah menyelesaikan codignan dari branch cabang, lakukan add dan commit.
+
+    Delete branch / kembali ke brach master dahulu
+    * git branch -D namaBranch
+
+11. Merge = menggabungkan branch ke master branch
+    NOTE : Sebelum melakukan merge, Kembali dulu ke master branch -> git checkout master
+    * git merge namaBranch
+
+12. Conflict = conflict terjadi ketika master branch mengalami perubahan sementara file yang ada di branch tidak mengetahui hal tersebut ketika melakukan merge. solusinya adalah:
+    * menghapus penanda conflict
+    * jika sudah cocok dengan semuanya maka lakukan commit. tapi kali ini tidak ada message-nya -> git commit
+
+13. Github
+    Ada dua cara untuk membuat directory Github:
+    A.  Membuat secara local lalu push ke Github
+        - Buat repo di Github dan samakan namanya dengan nama direktori repo local
+        - Push local repo ke Github dengan cara -> git push linkRepoGithub namaBranch
