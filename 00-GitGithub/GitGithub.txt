@@ -2,7 +2,7 @@
     * git config --global user.name "namauser"
 
 2.  Membuat email
-    * git config --global email "email@mail.com"
+    * git config --global user.email "email@mail.com"
 
 3.  Init repositery
     * git Init
