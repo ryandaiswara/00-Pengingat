@@ -75,8 +75,10 @@
     * Pilih code mana yang mau ditambahkan/dihilangkan
     * git add . -> git commit -m "pesan commit"
 
-13. Github
-    Ada dua cara untuk membuat directory Github:
-    A.  Membuat secara local lalu push ke Github
-        - Buat repo di Github dan samakan namanya dengan nama direktori repo local
-        - Push local repo ke Github dengan cara -> git push linkRepoGithub namaBranch
+13. Remote
+    Clone = Clone repo cloud menjadi repo local
+    * git clone https://linkRepoCloud
+
+    Repo lokal menjadi origin
+    * Buat direktori dengan nama yang sama dengan nama direktori lokal repo
+    * git remote add origin https://linkRepoCloud
