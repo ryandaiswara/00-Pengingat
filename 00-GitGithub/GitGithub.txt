@@ -82,3 +82,7 @@
     Repo lokal menjadi origin
     * Buat direktori dengan nama yang sama dengan nama direktori lokal repo
     * git remote add origin https://linkRepoCloud
+
+    Cek remote yang terhubung
+    * git remote
+    * git remote -v / cek secara spesifik (menampilkan link cloud repo)
