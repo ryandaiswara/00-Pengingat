@@ -24,6 +24,8 @@
 
 8.  Cek log/history
     * git log
+    * git log -n / n diisi dengan angka untuk menampilkan commit n terakhir
+    * git log -- namaFile / cek log pada file tertentu
 
     Menjadikan 1 baris agar mudah dibaca
     * git log --oneline
@@ -59,7 +61,10 @@
     NOTE : Setelah menyelesaikan codignan dari branch cabang, lakukan add dan commit.
 
     Delete branch / kembali ke brach master dahulu
-    * git branch -D namaBranch
+    * git branch -d namaBranch
+    
+    Cek file yang di merge
+    * git branch --merged
 
 11. Merge = menggabungkan branch ke master branch
     NOTE : Sebelum melakukan merge, Kembali dulu ke master branch -> git checkout master
