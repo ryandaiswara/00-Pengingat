@@ -85,3 +85,24 @@ const funcArgum = function () {
 
 let hasilFuncArgum = funcArgum(1, 2, 3, 4, 5);
 console.log(hasilFuncArgum);
+
+//  10. Callback function
+//  Function yang menjadi parameter dan dipanggil didalam function utama
+const user = ['ryanda', 'pandu', 'defri'];
+
+const addUser = (name, callback) => {
+    user.push(name);
+
+    callback(); // Parameter callback berupa function yang dipanggil disini
+}
+
+const updateUser = () => {
+    console.log(user.join('-'));
+}
+
+addUser('James', updateUser);
+
+// Untuk mempersingkat, masukan saja funtion updateUser menjadi argument
+addUser('Solo', () => {
+    console.log(user.join('-'));
+})
