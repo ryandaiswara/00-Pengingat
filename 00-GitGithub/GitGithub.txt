@@ -93,3 +93,10 @@
     * git fetch = Untuk cek perubahan yang ada di cloud repo
     * git pull  = Untuk mengambil perubahan yang ada di cloud repo
     Setelah itu dipilih yang mau ditambahkan/dihilangkan dan lakukan commit lagi dan push lagi
+
+15. Git ignore
+    .gitignore adalah file yang berisi pengecualian untuk di commit. Letakan file .gitignore didalam direktori git.
+
+16. Rebase
+    Rebase adalah menjadikan branch menjadi satu cabang atau fast-forward.
+    * git rebase
