@@ -135,3 +135,7 @@ addUser('James', updateUser);
 addUser('Solo', () => {
     console.log(user.join('-'));
 })
+
+
+
+//  11. Closure
